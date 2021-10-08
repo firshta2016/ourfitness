@@ -1,0 +1,38 @@
+[
+  {
+    "workoutId": 1,
+    "workoutName": "Monday",
+    "exercises": [
+      {
+        "exerciseId": 12,
+        "exerciseName": "Squat",
+        "rep": 10,
+        "sets": 4
+      },
+      {
+        "exerciseId": 13,
+        "exerciseName": "Lunge",
+        "rep": 15,
+        "sets": 4
+      },
+      {
+        "exerciseId": 14,
+        "exerciseName": "Step Up",
+        "rep": 15,
+        "sets": 4
+      },
+      {
+        "exerciseId": 15,
+        "exerciseName": "Hip Thrust",
+        "rep": 15,
+        "sets": 4
+      },
+      {
+        "exerciseId": 15,
+        "exerciseName": "Glute Cable Kickback",
+        "rep": 15,
+        "sets": 4
+      }
+    ]
+  }
+]
