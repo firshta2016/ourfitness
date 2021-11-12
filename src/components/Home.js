@@ -16,7 +16,7 @@ export const Home = () => {
       <HeroImage />
       <Slogan />
       <Circle />
-      <Workouts />
+      {/* <Workouts /> */}
       <Testimonials />
       <Footer />
     </StyledWrapper>

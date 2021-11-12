@@ -9,7 +9,7 @@ export const Testimonials = () => {
           <div className="row">
             <div className="col-md-12">
               <h1 className="text-center pb-5">
-                What our Athletics has to say
+                What our players has to say...
               </h1>
             </div>
 

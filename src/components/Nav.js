@@ -35,6 +35,13 @@ const StyledWrapper = styled.div`
   .container-fluid {
     margin: 0 80px 0 80px;
   }
+  .navbar {
+    font-size: 25px;
+  }
+  .navbar-brand {
+    font-size: 40px;
+    color: black;
+  }
   ul {
     display: block;
     margin-top: 10px;
@@ -45,5 +52,6 @@ const StyledWrapper = styled.div`
     text-decoration: none;
     display: inline;
     margin: 0 20px;
+    color: black;
   }
 `;

@@ -4,6 +4,7 @@ import { NavLink, useHistory } from "react-router-dom";
 import { Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Footer } from "./Footer";
+import { Card } from "./Card";
 
 export const Dashboard = () => {
   const [error, setError] = useState("");
@@ -11,7 +12,6 @@ export const Dashboard = () => {
   const history = useHistory();
   async function handleLogout() {
     setError("");
-
     try {
       await logout();
       history.push("/login");
@@ -50,57 +50,8 @@ export const Dashboard = () => {
           right for you.
         </p>
       </div>
-      <div className="card">
-        <div className="card-horizontal">
-          <div className="img-sqare-wrapper">
-            <img
-              className=""
-              src="http://via.placeholder.com/300x180"
-              alt="Card image cap"
-            />
-          </div>
-          <div className="card-body">
-            <h4>Card title</h4>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-        </div>
-
-        <div className="card-horizontal">
-          <div className="img-sqare-wrapper">
-            <img
-              className=""
-              src="http://via.placeholder.com/300x180"
-              alt="Card image cap"
-            />
-          </div>
-          <div className="card-body">
-            <h4>Card title</h4>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-        </div>
-        <div className="card-horizontal">
-          <div className="img-sqare-wrapper">
-            <img
-              className=""
-              src="http://via.placeholder.com/300x180"
-              alt="Card image cap"
-            />
-          </div>
-          <div className="card-body">
-            <h4>Card title</h4>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-        </div>
-      </div>
+      <Card />
+      <Card />
       <Footer />
     </StyledWrapper>
   );
@@ -146,3 +97,10 @@ const StyledWrapper = styled.div`
     margin-bottom: revert;
   }
 `;
+
+//change navbar login/logout
+//https://stackoverflow.com/questions/59580153/how-to-change-navbar-text-on-login-logout-in-react-js
+//https://wtwerner.medium.com/adding-login-logout-signup-to-a-navbar-with-react-and-redux-729f806258bb
+
+//MERN STACK
+//https://www.youtube.com/watch?v=2yddJwL1Tpg

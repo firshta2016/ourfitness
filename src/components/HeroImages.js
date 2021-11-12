@@ -27,13 +27,13 @@ const StyledWrapper = styled.div`
     height: 50vh;
   }
   .container {
-    background: tranparent;
-    color: white;
+    background: transparent;
+    color: black;
     height: 50vh;
     width: 55vh;
     position: absolute;
     left: 75%;
-    padding: 10px !important;
+    padding: 50px !important;
   }
   p {
     margin-left: 10%;
