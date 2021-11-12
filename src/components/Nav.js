@@ -8,7 +8,7 @@ export const Nav = () => {
       <nav className="navbar">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            ourfitness
+            getfit
           </a>
           <ul>
             <li>Rules</li>
