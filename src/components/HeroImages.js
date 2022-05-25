@@ -5,13 +5,13 @@ import HeaderImge from "../images/header.png";
 export const HeroImage = () => {
   return (
     <StyledWrapper>
-      <div className="container-fluid">
-        <div className="jumbotron jumbotron-fluid">
-          <div className="container">
-            <p>It's better to get fit Together.</p>
-            <button>Invite a Friend</button>
-          </div>
-        </div>
+      <div className="jumbotron">
+        <p className="lead">a structured week-by-week plan to get fit.</p>
+        <p className="btn">
+          <a className="btn btn-responsive btn-primary" href="#" role="button">
+            Learn more
+          </a>
+        </p>
       </div>
     </StyledWrapper>
   );
@@ -25,26 +25,43 @@ const StyledWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
+    opacity: 0.8;
   }
   .container {
     background: transparent;
-    color: black;
-    height: 50vh;
-    width: 55vh;
+    color: white;
     position: absolute;
-    left: 75%;
-    padding: 50px !important;
   }
   p {
     margin-left: 10%;
-    margin-right: 55%;
-    margin-bottom: 1rem;
-    font-size: 50px;
+    margin-right: 70%;
     line-height: 90%;
+    padding-top: 3%;
+  }
+
+  @media (min-width: 544px) {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width) {
+    font-size: 2rem;
+  }
+  @media (min-width: 992px) {
+    p {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    p {
+      font-size: 3rem;
+    }
   }
   button {
     margin-left: 13%;
-    margin-right: 55%;
-    margin-bottom: 1rem;
+  }
+  .btn {
+    padding-top: 0;
   }
 `;

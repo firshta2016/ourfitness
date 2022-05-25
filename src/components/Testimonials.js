@@ -5,7 +5,7 @@ export const Testimonials = () => {
   return (
     <StyledWrapper>
       <section className="pn_reviews">
-        <div className="container">
+        <div className="container reviews">
           <div className="row">
             <div className="col-md-12">
               <h1 className="text-center pb-5">
@@ -106,11 +106,14 @@ export const Testimonials = () => {
 };
 
 const StyledWrapper = styled.div`
+  .reviews {
+    padding-bottom: 5%;
+  }
   .pn_testimonial_box {
     font-weight: 300;
     padding: 2rem;
     margin: 2rem;
-    border: 1px solid #405fbd;
+    border: 1px solid grey;
     position: relative;
     transition: 1s;
     transform: scale(0.9);
@@ -138,7 +141,7 @@ const StyledWrapper = styled.div`
     position: absolute;
   }
   .pn_reviews {
-    background-color: #f8fdff;
+    background-color: #eff5f7;
   }
 `;
 

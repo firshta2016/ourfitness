@@ -39,7 +39,8 @@ export const Circle = () => {
 };
 const StyledWrapper = styled.div`
   .container-fluid {
-    background-color: #f8fdff;
+    background-color: #eff5f7;
+    padding: 0 0 5% 0;
   }
   .block {
     text-align: center;
